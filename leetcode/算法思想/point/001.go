@@ -1,7 +1,7 @@
 /*
 	leetcode tag:001 title:两数之和
 */
-package leetcode
+package point
 
 // method of hashmap(best)
 func twoSum(nums []int, target int) []int {

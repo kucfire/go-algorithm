@@ -2,7 +2,7 @@
 	leetcode tag:167 title:两数之和 II - 输入有序数组
 */
 
-package leetcode
+package point
 
 // method of loop
 func twoSum167(numbers []int, target int) []int {

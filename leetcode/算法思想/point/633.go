@@ -2,7 +2,7 @@
 	leetcode tag:633 title:两数平方之和
 */
 
-package leetcode
+package point
 
 import "math"
 

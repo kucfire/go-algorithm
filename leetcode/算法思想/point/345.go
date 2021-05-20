@@ -2,7 +2,7 @@
 	leetcode tag:345 title:反转字符串中的元音字母
 */
 
-package leetcode
+package point
 
 // method of double points
 func reverseVowels(s string) string {
