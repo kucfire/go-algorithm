@@ -9,6 +9,7 @@ import "sort"
 // method of greedy
 func findContentChildren(g []int, s []int) int {
 	sort.Ints(g)
+	sort.Ints(s)
 	result := 0
 	indexG, indexS := 0, 0
 	for indexG < len(g) && indexS < len(s) {
