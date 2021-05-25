@@ -22,7 +22,7 @@ func canPlaceFlowers(flowerbed []int, n int) bool {
 	if pre < 0 {
 		total += (len(flowerbed) + 1) / 2
 	} else {
-		total += (len(flowerbed) - pre - 2) / 2
+		total += (len(flowerbed) - pre - 1) / 2
 	}
 
 	return total >= n
