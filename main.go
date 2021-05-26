@@ -15,5 +15,8 @@ func main() {
 	// fmt.Println(greedy.FindMinArrowShots([][]int{{10, 16}, {2, 8}, {1, 6}, {7, 12}}))
 	// fmt.Println(greedy.FindMinArrowShots([][]int{{1, 2}, {3, 4}, {5, 6}, {7, 8}}))
 	// 406
-	fmt.Println(greedy.ReconstructQueue([][]int{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}}))
+	// fmt.Println(greedy.ReconstructQueue([][]int{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}}))
+	// 665
+	fmt.Println(greedy.CheckPossibility([]int{3, 4, 2, 3}))
+	fmt.Println(greedy.CheckPossibility([]int{5, 7, 1, 8}))
 }
