@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"go-algorithm/leetcode/算法思想/greedy"
+	binarysearch "go-algorithm/leetcode/算法思想/BinarySearch"
 )
 
 // test case
@@ -17,6 +17,10 @@ func main() {
 	// 406
 	// fmt.Println(greedy.ReconstructQueue([][]int{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}}))
 	// 665
-	fmt.Println(greedy.CheckPossibility([]int{3, 4, 2, 3}))
-	fmt.Println(greedy.CheckPossibility([]int{5, 7, 1, 8}))
+	// fmt.Println(greedy.CheckPossibility([]int{3, 4, 2, 3}))
+	// fmt.Println(greedy.CheckPossibility([]int{5, 7, 1, 8}))
+	// 744
+	// fmt.Println(binarysearch.NextGreatestLetter([]byte{'c', 'f', 'j'}, byte('c')))
+	// 540
+	fmt.Println(binarysearch.SingleNonDuplicate([]int{1}))
 }
