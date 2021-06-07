@@ -6,11 +6,11 @@ package backtracking
 
 // method of backtracking
 func letterCombinations(digits string) []string {
-	result := make([]string, 0)
-
 	if len(digits) == 0 {
-		return result
+		return []string{}
 	}
+
+	result := make([]string, 0)
 
 	dictionary := map[rune][]string{
 		'1': {""},
