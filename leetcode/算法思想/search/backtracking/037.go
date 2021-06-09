@@ -46,7 +46,22 @@ func solveSudoku(board [][]byte) {
 			}
 		}
 
-		return true
+		if board[i][j] != '.' {
+			return dfs(i, j+1)
+		}
+
+		for num := byte('1'); num <= byte('9'); num++ {
+			if isRepeat(i, j, num) {
+				continue
+			}
+			board[i][j] = num
+			if dfs(i, j+1) {
+				return true
+			}
+			board[i][j] = '.'
+		}
+
+		return false
 	}
 	dfs(0, 0)
 }
