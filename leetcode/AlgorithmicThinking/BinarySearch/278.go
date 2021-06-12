@@ -28,3 +28,7 @@ func firstBadVersion(n int) int {
 	}
 	return -1
 }
+
+func isBadVersion(mid int) bool {
+	return true
+}

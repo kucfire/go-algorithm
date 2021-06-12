@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	binarysearch "go-algorithm/leetcode/算法思想/BinarySearch"
+	binarysearch "go-algorithm/leetcode/AlgorithmicThinking/BinarySearch"
 )
 
 // test case
@@ -23,4 +23,6 @@ func main() {
 	// fmt.Println(binarysearch.NextGreatestLetter([]byte{'c', 'f', 'j'}, byte('c')))
 	// 540
 	fmt.Println(binarysearch.SingleNonDuplicate([]int{1}))
+
+	// binarysearch.SingleNonDuplicate
 }
