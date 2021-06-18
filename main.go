@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	binarysearch "go-algorithm/leetcode/AlgorithmicThinking/BinarySearch"
+	dynamicprogramming "go-algorithm/leetcode/AlgorithmicThinking/DynamicProgramming"
 )
 
 // test case
@@ -22,7 +22,8 @@ func main() {
 	// 744
 	// fmt.Println(binarysearch.NextGreatestLetter([]byte{'c', 'f', 'j'}, byte('c')))
 	// 540
-	fmt.Println(binarysearch.SingleNonDuplicate([]int{1}))
+	// fmt.Println(binarysearch.SingleNonDuplicate([]int{1}))
 
 	// binarysearch.SingleNonDuplicate
+	fmt.Println(dynamicprogramming.LongestCommonSubsequence("abcde", "ace"))
 }
