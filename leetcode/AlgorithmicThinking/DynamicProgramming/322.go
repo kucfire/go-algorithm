@@ -4,27 +4,25 @@
 
 package dynamicprogramming
 
+import "math"
+
 // method of dp
 func coinChange(coins []int, amount int) int {
-	min := func(i, j int) int {
-		if i < j {
-			return i
-		}
-		return j
+	if amount <= 0 && len(coins) <= 0 {
+		return -1
 	}
+
 	dp := make([]int, amount+1)
-	for _, coin := range coins {
-		for i := coin; i <= amount; i++ {
-			if i == coin {
-				dp[i] = 1
-			} else if dp[i] == 0 && dp[i-coin] != 0 {
-				dp[i] = dp[i-coin] + 1
-			} else if dp[i] != 0 {
-				dp[i] = min(dp[i], dp[i-coin]+1)
+
+	for i := 1; i <= amount; i++ {
+		dp[i] = math.MaxInt32
+		for _, c := range coins {
+			if i >= c && dp[i] > dp[i-c]+1 {
+				dp[i] = dp[i-c] + 1
 			}
 		}
 	}
-	if dp[amount] == 0 {
+	if dp[amount] == math.MaxInt32 {
 		return -1
 	}
 	return dp[amount]
