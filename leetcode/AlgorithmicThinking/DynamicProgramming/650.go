@@ -14,13 +14,6 @@ func minSteps(n int) int {
 	dp[1] = 0
 	dp[2] = 2
 
-	// min := func(i, j int) int {
-	// 	if i > j {
-	// 		return j
-	// 	}
-	// 	return i
-	// }
-
 	for i := 3; i <= n; i++ {
 		minV := math.MaxInt32
 		for j := i / 2; j > 2; j-- {
