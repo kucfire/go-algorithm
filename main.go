@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	dynamicprogramming "go-algorithm/leetcode/AlgorithmicThinking/DynamicProgramming"
+	// dynamicprogramming "go-algorithm/leetcode/AlgorithmicThinking/DynamicProgramming"
+	"go-algorithm/leetcode/AlgorithmicThinking/math"
 )
 
 // test case
@@ -25,5 +26,7 @@ func main() {
 	// fmt.Println(binarysearch.SingleNonDuplicate([]int{1}))
 
 	// binarysearch.SingleNonDuplicate
-	fmt.Println(dynamicprogramming.LongestCommonSubsequence("abcde", "ace"))
+	// fmt.Println(dynamicprogramming.LongestCommonSubsequence("abcde", "ace"))
+	// fmt.Println(math.CountPrimes(10))
+	fmt.Println(math.MinMoves2([]int{1, 2, 3, 4, 5, -1, -2, -3, 0}))
 }
